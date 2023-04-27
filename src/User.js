@@ -11,7 +11,7 @@ function User(){
   const handleSubmit=(e)=> {
     e.preventDefault();
 
-     fetch("http://localhost:3000", {
+     fetch("https://test-backend-rho.vercel.app", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
