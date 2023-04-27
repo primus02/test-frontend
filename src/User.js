@@ -29,7 +29,7 @@ function User(){
         }
         else{
                 console.log({"profile": res})
-                setUser(res.user);
+                setUser(res);
                 setShow(true);
         }
      })
@@ -48,9 +48,10 @@ function User(){
 
             {show && (<div>
                  <h3>User details</h3>
-                 <h4>Name: {user.name}</h4>
-                 <p>Username: {user?.username}</p>
-                 <p>UserId: {user?.userId}</p>
+                 <h4>Name: {user.user.name}</h4>
+                 <p>Username: {user.user.username}</p>
+                 <p>UserId: {user.user.userId}</p>
+                 <p>Code: {user.key}</p>
             </div>)
             }
         </div>
